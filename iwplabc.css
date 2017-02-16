@@ -9,3 +9,12 @@
 .textopa{
 	opacity: 0.5;
 }
+input:invalid{
+border-color:red;
+}
+a:hover{
+	color:green;
+}
+input:focus{
+background-color:#ffe6e6;
+}
