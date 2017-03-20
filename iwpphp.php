@@ -1,14 +1,21 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
 </head>
 <body>
-<i>Welcome </i>
-<?php echo $_POST["name1"]; ?>
-<br>
+<?php
+function validate($user){
+	if(empty($user) ){
+	echo "Please fill all the entries";	
+}
+	else{
+	echo "Welcome! ";
+	echo $_POST["username"];
+	echo " You are logged in!";
+	}
+}
+$check=validate($_POST["username"]);
 
-<i>You are logged in!!</i>
+?><br>
 
 </body>
 </html>
